@@ -90,7 +90,7 @@ public class FragmentOneHorizontalScroView extends Fragment{
         mDatas = new ArrayList<Integer>(Arrays.asList(
                 R.drawable.my_bike, R.drawable.my_bike,
                 R.drawable.ic_launcher, R.drawable.ic_launcher,
-                R.drawable.ic_launcher, R.drawable.ic_launcher,
+                R.drawable.my_bike, R.drawable.my_bike,
                 R.drawable.ic_launcher, R.drawable.ic_launcher,
                 R.drawable.ic_launcher, R.drawable.ic_launcher,
                 R.drawable.ic_launcher, R.drawable.ic_launcher,
