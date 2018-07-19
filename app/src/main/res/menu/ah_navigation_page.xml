@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="首页"
+        android:icon="@drawable/ic_bottom_nav_health_state" />
+
+    <item
+        android:title="次页"
+        android:icon="@drawable/ic_bottom_nav_health_state" />
+
+    <item
+        android:title="第三页"
+        android:icon="@drawable/ic_bottom_nav_health_state" />
+
+    <item
+        android:title="第四页"
+        android:icon="@drawable/ic_bottom_nav_health_state" />
+
+</menu>

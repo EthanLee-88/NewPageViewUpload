@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green"
+    android:orientation="vertical"
+    >
+    <com.example.jiangnan.newpageview.View.ACirclePointView
+        android:id="@+id/chect_point"
+        android:layout_marginTop="38dp"
+        android:layout_height="38dp"
+        android:layout_width="38dp"
+        android:layout_gravity="center_horizontal"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/chect_contolt"
+        android:text="chect"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bluetooth"
+        android:text="打开蓝牙并搜索"
+        android:layout_marginTop="16dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/stop_seach"
+        android:text="停止蓝牙搜索"
+        android:layout_marginTop="16dp"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/bluetooth_devise_show"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="38dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/show_text"
+        />
+</LinearLayout>

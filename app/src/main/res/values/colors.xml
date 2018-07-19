@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="blue">#326ee7</color>
+    <color name="green">#33ef40</color>
+    <color name="grey">#a4a5a6</color>
+    <color name="black">#0a0a0a</color>
+    <color name="white">#fcfcfc</color>
+    <color name="cheng">#d4740d</color>
+    <color name="color_null">#00000000</color>
+</resources>
