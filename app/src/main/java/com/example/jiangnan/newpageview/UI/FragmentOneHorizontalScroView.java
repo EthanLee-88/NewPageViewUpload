@@ -41,7 +41,6 @@ public class FragmentOneHorizontalScroView extends Fragment{
     private List<Integer> mDatas;
     private RecyclerView mrecyclerView;
     private MyRecyclerAdapter MmyRecyclerAdapter;
-    private CircleImageView mCircleImageView;
 
     @Override
     public void onDestroy() {
@@ -82,22 +81,19 @@ public class FragmentOneHorizontalScroView extends Fragment{
         mrecyclerView.setLayoutManager(mlinearLayoutManager);
         horizontalScrollViewByRecyclerView();
         /*********************************************************/
-        mCircleImageView = (CircleImageView) view.findViewById(R.id.circle_view);
-        mCircleImageView.setImageResource(R.drawable.my_bike);
-        mCircleImageView.enableCircleImageView(false);
     }
     private void horizontalScrollViewByMySelf(){
         mDatas = new ArrayList<Integer>(Arrays.asList(
                 R.drawable.my_bike, R.drawable.my_bike,
-                R.drawable.ic_launcher, R.drawable.ic_launcher,
                 R.drawable.my_bike, R.drawable.my_bike,
-                R.drawable.ic_launcher, R.drawable.ic_launcher,
-                R.drawable.ic_launcher, R.drawable.ic_launcher,
-                R.drawable.ic_launcher, R.drawable.ic_launcher,
-                R.drawable.ic_launcher, R.drawable.ic_launcher,
-                R.drawable.ic_launcher, R.drawable.ic_launcher,
-                R.drawable.ic_launcher, R.drawable.ic_launcher,
-                R.drawable.ic_launcher));
+                R.drawable.my_bike, R.drawable.my_bike,
+                R.drawable.my_bike, R.drawable.my_bike,
+                R.drawable.my_bike, R.drawable.my_bike,
+                R.drawable.my_bike, R.drawable.my_bike,
+                R.drawable.my_bike, R.drawable.my_bike,
+                R.drawable.my_bike, R.drawable.my_bike,
+                R.drawable.my_bike, R.drawable.my_bike,
+                R.drawable.my_bike));
         mHorizontalScrollViewAdapter = new HorizontalScrollViewAdapter(getActivity() , mDatas);
         mMyHorizontalScrollView.initDatas(mHorizontalScrollViewAdapter);
     }
@@ -117,8 +113,8 @@ public class FragmentOneHorizontalScroView extends Fragment{
     private void horizontalScrollViewByRecyclerView(){
         ArrayList<MemberData> memberData = new ArrayList<MemberData>();
         MemberData member = new MemberData();
-        for (int i = 0 ; i <= 8 ; i ++){
-            member.iconId = R.drawable.ic_launcher;
+        for (int i = 0 ; i <= 16 ; i ++){
+            member.iconId = R.drawable.sea;
             member.nickName = getString(R.string.yellowflowerland);
             memberData.add(member);
         }

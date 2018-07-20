@@ -4,18 +4,19 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:id="@+id/linear_id"
+    android:id="@+id/linear_id_rect"
+    android:layout_marginLeft="18dp"
     >
-    <com.example.jiangnan.newpageview.View.MyCircleImageView
+    <com.example.jiangnan.newpageview.View.RoundRectImageView
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:id="@+id/id_index_gallery_item_image"
+        android:id="@+id/id_index_gallery_item_image_rect"
         android:layout_gravity="center"
         />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/id_index_gallery_item_text"
+        android:id="@+id/id_index_gallery_item_text_rect"
         android:layout_gravity="center"
         android:gravity="center"
         android:textColor="@color/white"

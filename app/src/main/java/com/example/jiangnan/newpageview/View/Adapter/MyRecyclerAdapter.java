@@ -12,6 +12,7 @@ import android.widget.TextView;
 import com.example.jiangnan.newpageview.Data.MemberData;
 import com.example.jiangnan.newpageview.R;
 import com.example.jiangnan.newpageview.View.MyCircleImageView;
+import com.example.jiangnan.newpageview.View.RoundRectImageView;
 
 import java.util.ArrayList;
 
@@ -32,35 +33,34 @@ public class MyRecyclerAdapter extends RecyclerView.Adapter<MyRecyclerAdapter.Vi
 
     public static class ViewHolder extends RecyclerView.ViewHolder{
         private TextView textViewNickN;
-        private MyCircleImageView mcircleImageView;
+        private RoundRectImageView MroundRectImageView;
         private LinearLayout memberLayout;
 
         public ViewHolder (View view){
             super(view);
-            textViewNickN = (TextView) view.findViewById(R.id.id_index_gallery_item_text);
-            mcircleImageView = (MyCircleImageView) view.findViewById(R.id.id_index_gallery_item_image);
-            memberLayout = (LinearLayout) view.findViewById(R.id.linear_id);
+            textViewNickN = (TextView) view.findViewById(R.id.id_index_gallery_item_text_rect);
+            MroundRectImageView = (RoundRectImageView) view.findViewById(R.id.id_index_gallery_item_image_rect);
+            memberLayout = (LinearLayout) view.findViewById(R.id.linear_id_rect);
         }
     }
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
         holder.textViewNickN.setText(memberData.get(position).nickName);
 
-        holder.mcircleImageView.setImageResource(memberData.get(position).iconId);
+        holder.MroundRectImageView.setImageResource(memberData.get(position).iconId);
 
-        holder.mcircleImageView.setOnClickListener(new View.OnClickListener() {
+        holder.MroundRectImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MyCircleImageView view1 = (MyCircleImageView) view;
-                view1.startAni(1f, 1, 250, 0);
-            }
+                RoundRectImageView view1 = (RoundRectImageView) view;
+        }
         });
     }
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).
-                inflate(R.layout.item_horizontal_scrollview_my , parent , false);
+                inflate(R.layout.item_horizontal_scrollview_round_rect , parent , false);
         return new ViewHolder(view);
     }
 
